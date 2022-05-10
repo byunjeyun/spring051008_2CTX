@@ -20,7 +20,7 @@ public class MainClass {
 		if(str.equals("dev")) {
 			config = "dev";
 		}else if(str.equals("run")) {
-			config = "run";
+			config = "run";		
 		}
 		
 		scann.close();
