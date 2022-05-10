@@ -30,7 +30,7 @@ public class MainClass_java {
 		
 		ctx.register(ApplicationConfig_dev.class, ApplicationConfig_run.class);
 		
-		ServerInfo info =  ctx.getBean("ServerInfo", ServerInfo.class);
+		ServerInfo info =  ctx.getBean("serverInfo", ServerInfo.class);
 		System.out.println("server IP :" + info.getIpNum());
 		System.out.println("server Port :" + info.getPortNum());
 		
