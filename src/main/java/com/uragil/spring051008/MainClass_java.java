@@ -19,7 +19,7 @@ public class MainClass_java {
 		
 		if(str.equals("dev")) {
 			config = "dev";
-		}else if(str.equals("run")) {
+		}else if(str.equals("run")) {			
 			config = "run";
 		}
 		
@@ -29,6 +29,7 @@ public class MainClass_java {
 		ctx.getEnvironment().setActiveProfiles(config);
 		
 		ctx.register(ApplicationConfig_dev.class, ApplicationConfig_run.class);
+		ctx.refresh();
 		
 		ServerInfo info =  ctx.getBean("serverInfo", ServerInfo.class);
 		System.out.println("server IP :" + info.getIpNum());
